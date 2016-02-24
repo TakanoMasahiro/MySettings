@@ -1,0 +1,33 @@
+= Linux ===============================
+chmod
+chown
+ssh
+ssh [hostName]
+------------------------------
+すべてのファイルを移動
+find . -type f | xargs -i mv {} ../20151212/
+------------------------------
+※デプロイ方法※
+デプロイ sudo sh /root/applog/deploy/do.sh
+------------------------------
+シェルのプロセスチェック
+ps -ax | grep repair.sh
+ps aux | grep CreateApplog4kBoxLog
+
+キル
+kill プロセスID
+それでも死ななければ
+kill -KILL プロセスID
+
+名前でキル
+pkill repair.sh CreateApplog4kBoxLog
+
+（pkill -KILL -f netbeans）
+------------------------------
+ファイル名表示
+Ctrl + g
+
+
+= Win ================================
+nslookup
+======================================
