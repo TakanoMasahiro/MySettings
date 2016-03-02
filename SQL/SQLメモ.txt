@@ -1,0 +1,22 @@
+ユーザーの選択しているリーダーを集計する。
+
+SELECT
+COUNT(*),
+COUNT(character_id_1  = 1 OR null) as KAITO,
+COUNT(character_id_1  = 2 OR null) as KOI,
+COUNT(character_id_1  = 3 OR null) as AKANE,
+COUNT(character_id_1  = 4 OR null) as BOTAN,
+COUNT(character_id_1  = 5 OR null) as NARUKAMI
+FROM user_party
+
+WHERE EXISTS
+(
+SELECT *
+    FROM user user
+    WHERE user.login_time >= '2016-01-12'
+    and user.user_id = user_party.user_id
+)
+
+
+COUNT(*)	KAITO	KOI	AKANE	BOTAN	NARUKAMI
+3624	981	138	77	7	5
