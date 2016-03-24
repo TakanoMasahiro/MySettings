@@ -1,0 +1,15 @@
+http://qiita.com/arai-wa/items/ceb28523c14177148ce4
+大文字へと置換
+
+たとえば
+foo_bar_hoge_piyo
+の
+(^|_)(.)を\u\2に置換すると、
+FooBarHogePiyo
+とアッパーケースにできます。
+小文字へと置換
+
+LOG_FILE.TXT
+の(.)を\l\1に置換すれば
+log_file.txt
+とロワーケースにできます。
