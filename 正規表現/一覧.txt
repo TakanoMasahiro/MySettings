@@ -13,3 +13,10 @@ LOG_FILE.TXT
 の(.)を\l\1に置換すれば
 log_file.txt
 とロワーケースにできます。
+
+
+-----------------------------------------
+Find:
+m_Name: PushSkipButton | m_MethodName: PushSkipButton
+Where:
+C:\Users\takan_000\Git\match30_unity5\Assets, *.meta, *.unity, *.prefab
