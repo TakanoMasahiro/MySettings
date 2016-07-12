@@ -16,6 +16,10 @@ log_file.txt
 
 
 -----------------------------------------
+": から始まる文字を選択
+":.*
+
+-----------------------------------------
 Find:
 m_Name: PushSkipButton | m_MethodName: PushSkipButton
 Where:
